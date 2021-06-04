@@ -1,14 +1,14 @@
 import "./App.css";
-import Cards from "./components/Cards";
-
+import Squads from "./components/Squads";
+import Trainer from "./components/Trainer";
 function App() {
   return (
     <div>
       {/* NavBar */}
 
       {/* Body */}
-
-      <Cards />
+      <Trainer />
+      <Squads />
 
       {/* <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src="holder.js/100px180" />

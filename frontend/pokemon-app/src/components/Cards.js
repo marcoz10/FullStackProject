@@ -5,34 +5,59 @@ function Cards() {
   const pokemen = [
     {
       id: 1,
-      name: "balbusaur",
+      name: "bulbasaur",
       url: "",
       type: "grass",
-      type2: "dragon",
+      type2: "poison",
       weight: "300",
       height: "7",
     },
     {
-      id: 2,
-      name: "dookie",
+      id: 4,
+      name: "charmander",
       url: "",
       type: "fire",
       weight: "40",
       height: "73",
     },
     {
-      id: 3,
-      name: "creack",
+      id: 7,
+      name: "squirtle",
       url: "",
       type: "water",
-      type2: "electric",
+      weight: "47",
+      height: "25",
+    },
+    {
+      id: 69,
+      name: "bellsprout",
+      url: "",
+      type: "grass",
+      type2: "poison",
+      weight: "47",
+      height: "25",
+    },
+    {
+      id: 81,
+      name: "magnemite",
+      url: "",
+      type: "electric",
+      type: "steel",
+      weight: "47",
+      height: "25",
+    },
+    {
+      id: 64,
+      name: "kadabra",
+      url: "",
+      type: "psychic",
       weight: "47",
       height: "25",
     },
   ];
 
   return (
-    <div>
+    <div class="flex justify-items-start">
       {pokemen.map((pokemon) => {
         return <Card key={pokemon.id} {...pokemon} />;
       })}
