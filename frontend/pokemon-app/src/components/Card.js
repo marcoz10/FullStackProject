@@ -3,7 +3,7 @@ import TypeChip from "./TypeChip";
 
 function Card({ id, name, height, weight, type, type2 }) {
   return (
-    <div style={{ border: "1px solid red" }}>
+    <div class="p-2 m-2">
       <h4>
         #{id}: {name}
       </h4>

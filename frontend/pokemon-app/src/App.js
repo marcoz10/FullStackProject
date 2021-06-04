@@ -1,17 +1,16 @@
 import "./App.css";
-import Cards from './components/Cards'
+import Cards from "./components/Cards";
 
 function App() {
-  return <div className="App">
+  return (
+    <div>
+      {/* NavBar */}
 
-{/* NavBar */}
+      {/* Body */}
 
-{/* Body */}
+      <Cards />
 
-  <Cards/>
-
-
-{/* <Card style={{ width: '18rem' }}>
+      {/* <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src="holder.js/100px180" />
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
@@ -23,9 +22,9 @@ function App() {
   </Card.Body>
 </Card> */}
 
-{/* Footer */}
-
-  </div>;
+      {/* Footer */}
+    </div>
+  );
 }
 
 export default App;
