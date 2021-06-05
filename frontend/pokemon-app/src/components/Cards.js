@@ -57,7 +57,7 @@ function Cards() {
   ];
 
   return (
-    <div class="flex justify-items-start">
+    <div className="flex justify-items-start">
       {pokemen.map((pokemon) => {
         return <Card key={pokemon.id} {...pokemon} />;
       })}
