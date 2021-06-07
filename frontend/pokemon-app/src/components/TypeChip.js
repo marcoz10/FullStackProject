@@ -67,13 +67,9 @@ function TypeChip({ label }) {
       color = "#fff";
   }
 
-  const styles = {
-    fontFamily: "Press Start 2P, cursive",
-  };
-
   return (
     <>
-      <Chip label={label} style={{ backgroundColor: color }} classes={styles} />
+      <Chip label={label} style={{ backgroundColor: color }} />
     </>
   );
 }

@@ -13,7 +13,7 @@ function Card({ id, name, height, weight, type, type2, image }) {
         #{id}: {capitalize(name)}
       </h4>
       <img className="mx-auto" src={image} alt={name} />
-      <div className="flex justify-center space-x-1 py-1">
+      <div className="flex justify-center space-x-3 pb-1">
         <TypeChip label={capitalize(type)} />
         {type2 && <TypeChip label={capitalize(type2)} />}
       </div>
