@@ -6,58 +6,58 @@ function TypeChip({ label }) {
   let color;
 
   switch (label) {
-    case "normal":
+    case "Normal":
       color = "#A8A878";
       break;
-    case "fire":
+    case "Fire":
       color = "#F08030";
       break;
-    case "water":
+    case "Water":
       color = "#6890F0";
       break;
-    case "grass":
+    case "Grass":
       color = "#78C850";
       break;
-    case "electric":
+    case "Electric":
       color = "#F8D030";
       break;
-    case "psychic":
+    case "Psychic":
       color = "#F85888";
       break;
-    case "ice":
+    case "Ice":
       color = "#98D8D8";
       break;
-    case "dragon":
+    case "Dragon":
       color = "#7038F8";
       break;
-    case "dark":
+    case "Dark":
       color = "#705848";
       break;
-    case "fairy":
+    case "Fairy":
       color = "#EE99AC";
       break;
-    case "fighting":
+    case "Fighting":
       color = "#C03028";
       break;
-    case "flying":
+    case "Flying":
       color = "#A890F0";
       break;
-    case "poison":
+    case "Poison":
       color = "#A040A0";
       break;
-    case "ground":
+    case "Ground":
       color = "#E0C068";
       break;
-    case "rock":
+    case "Rock":
       color = "#B8A038";
       break;
-    case "bug":
+    case "Bug":
       color = "#A8B820";
       break;
-    case "ghost":
+    case "Ghost":
       color = "#705898";
       break;
-    case "steel":
+    case "Steel":
       color = "#B8B8D0";
       break;
     case "???":

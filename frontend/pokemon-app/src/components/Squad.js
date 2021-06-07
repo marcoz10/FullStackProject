@@ -4,7 +4,7 @@ import Cards from "./Cards";
 function Squad() {
   return (
     <div>
-      <Cards />
+      <h1>Squad infomation</h1>
     </div>
   );
 }
