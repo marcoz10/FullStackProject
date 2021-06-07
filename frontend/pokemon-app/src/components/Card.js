@@ -8,15 +8,17 @@ function Card({ id, name, height, weight, type, type2, image }) {
   }
 
   return (
-    <div className="p-2 m-2 w-1/6 border border-red-500">
-      <h4>
+    <div className="p-2 m-2 border border-red-500">
+      <h4 className="text-xl text-center">
         #{id}: {capitalize(name)}
       </h4>
-      <img src={image} alt={name} />
+      <img className="mx-auto" src={image} alt={name} />
       <p>Height: {height}</p>
       <p>Weight: {weight}</p>
-      <TypeChip label={capitalize(type)} />
-      {type2 && <TypeChip label={capitalize(type2)} />}
+      <div className="flex justify-center space-x-1">
+        <TypeChip label={capitalize(type)} />
+        {type2 && <TypeChip label={capitalize(type2)} />}
+      </div>
     </div>
   );
 }
