@@ -1,5 +1,6 @@
 import React from "react";
 import TypeButton from "./TypeButton";
+import "./styles/card-styles.css";
 
 function Card({ id, name, height, weight, type, type2, image }) {
   function capitalize(str) {
@@ -8,7 +9,7 @@ function Card({ id, name, height, weight, type, type2, image }) {
   }
 
   return (
-    <div className="p-2 m-2 border border-red-500 bg-red-100">
+    <div className="p-2 m-2 border border-red-500 bg-red-100 card-bounce">
       <h4 className="text-lg text-center font-press-start">
         #{id}: {capitalize(name)}
       </h4>
