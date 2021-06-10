@@ -1,8 +1,6 @@
 import React from "react";
-import Chip from "@material-ui/core/Chip";
 
-// This will be used for the types ex. Grass, Fire, Water
-function TypeChip({ label }) {
+function TypeButton({ label }) {
   let color;
 
   switch (label) {
@@ -66,12 +64,16 @@ function TypeChip({ label }) {
     default:
       color = "#fff";
   }
-
   return (
     <>
-      <Chip label={label} style={{ backgroundColor: color }} />
+      <button
+        className="text-xs font-press-start rounded-2xl p-2"
+        style={{ backgroundColor: color }}
+      >
+        {label}
+      </button>
     </>
   );
 }
 
-export default TypeChip;
+export default TypeButton;
