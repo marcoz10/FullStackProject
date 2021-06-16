@@ -30,8 +30,8 @@ public class TrainerAPI {
     }
 
     @PostMapping(value = "/trainer/addTrainer")
-    public ResponseEntity<Integer> addTrainer(@Valid @RequestBody TrainerDTO trainerDTO){
-        Integer res = trainerService.registerNewTrainer(trainerDTO);
+    public ResponseEntity<String> addTrainer(@Valid @RequestBody TrainerDTO trainerDTO){
+        String res = trainerService.registerNewTrainer(trainerDTO);
         return new ResponseEntity<>(res, HttpStatus.OK);
     }
 }

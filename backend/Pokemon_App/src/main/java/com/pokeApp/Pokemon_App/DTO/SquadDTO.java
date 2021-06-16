@@ -1,17 +1,14 @@
-package com.pokeApp.Pokemon_App.Entity;
+package com.pokeApp.Pokemon_App.DTO;
 
-import jdk.jfr.Enabled;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
-import javax.persistence.*;
-import java.util.List;
+public class SquadDTO {
 
-@Entity
-@Table(name = "Squad")
-public class Squad {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer squadID;
 
+    @NotNull(message = "Squad name can not be empty")
+    @Pattern(regexp = "[A-Z][a-z]{19}")
     private String squadName;
 
     private Integer slotOne;
@@ -26,6 +23,7 @@ public class Squad {
 
     private Integer slotSix;
 
+    @Pattern(regexp = "[a-zA-Z0-9._]+@[a-zA-Z]{2,}\\.[a-zA-Z][a-zA-Z]+", message = "Invalid email format")
     private String trainerEmail;
 
     public Integer getSquadID() {
@@ -99,7 +97,4 @@ public class Squad {
     public void setTrainerEmail(String trainerEmail) {
         this.trainerEmail = trainerEmail;
     }
-
-
-
 }

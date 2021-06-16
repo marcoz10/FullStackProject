@@ -4,25 +4,21 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "TRAINER")
 public class Trainer {
 
     @Id
     private String email;
 
-
     private String name;
-
 
     Integer favoritePokemon;
 
-
     private String country;
-
 
     private String password;
 
     @OneToMany
+    @JoinColumn(name = "email")
     private List<Squad> listOfSquad;
 
     public Trainer(String name){

@@ -22,6 +22,7 @@ public class TrainerServiceImpl implements TrainerService{
         // Retrieve customer data from the repository
         TrainerDTO trainerDTO = new TrainerDTO();
         Optional<Trainer> trainer = trainerRepository.findById(email);
+        if(trainer.isPresent()) {
             trainerDTO.setEmail(trainer.get().getEmail());
             trainerDTO.setFavoritePokemon(trainer.get().getFavoritePokemon());
             trainerDTO.setName(trainer.get().getName());
@@ -30,11 +31,12 @@ public class TrainerServiceImpl implements TrainerService{
             trainerDTO.setCountry(trainer.get().getCountry());
             System.out.println(trainerDTO);
             return trainerDTO;
-
+        }
+        return null;
     }
 
     @Override
-    public Integer registerNewTrainer(TrainerDTO trainerDTO) {
+    public String registerNewTrainer(TrainerDTO trainerDTO) {
 
         boolean isIdEmpty = trainerRepository.findById(trainerDTO.getEmail()).isEmpty();
         if(isIdEmpty) {
@@ -46,8 +48,8 @@ public class TrainerServiceImpl implements TrainerService{
             newTrainer.setFavoritePokemon(trainerDTO.getFavoritePokemon());
             newTrainer.setCountry(trainerDTO.getCountry());
             trainerRepository.save(newTrainer);
-            return 0;
+            return "Registration is successful!";
         }
-        return -1;
+        return "Registration is failed.";
     }
 }

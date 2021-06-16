@@ -8,5 +8,5 @@ import java.util.List;
 public interface TrainerService {
     TrainerDTO getTrainer(String id);
 
-    Integer registerNewTrainer(TrainerDTO trainerDTO);
+    String registerNewTrainer(TrainerDTO trainerDTO);
 }
