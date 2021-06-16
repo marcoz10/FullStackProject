@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PokemonAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PokemonAppApplication.class, args);
+		try {
+			SpringApplication.run(PokemonAppApplication.class, args);
+		} catch (Exception e){
+			e.printStackTrace();
+		}
 	}
 
 }

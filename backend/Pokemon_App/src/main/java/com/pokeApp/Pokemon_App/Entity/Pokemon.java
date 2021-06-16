@@ -1,4 +1,4 @@
-package com.pokeApp.Pokemon_App.entity;
+package com.pokeApp.Pokemon_App.Entity;
 
 public class Pokemon {
     Integer id;
