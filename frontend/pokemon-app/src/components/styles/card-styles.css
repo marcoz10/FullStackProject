@@ -19,3 +19,8 @@
     transform: translateY(0px);
   }
 }
+
+.cardmon {
+  transition: 0.45s ease-out;
+  animation-duration: 1.6s;
+}

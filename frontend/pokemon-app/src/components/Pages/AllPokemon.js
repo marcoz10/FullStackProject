@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Card";
 
-function AllTypes() {
+function AllPokemon() {
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
@@ -46,4 +46,4 @@ function AllTypes() {
   );
 }
 
-export default AllTypes;
+export default AllPokemon;
