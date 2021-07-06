@@ -6,6 +6,5 @@ import java.util.List;
 
 public interface SquadService {
     List<SquadDTO> getTrainerSquads(String trainerEmail);
-    void addTrainerSquad(String trainerEmail, SquadDTO squadDTO);
-
+    String addTrainerSquad(SquadDTO squadDTO);
 }

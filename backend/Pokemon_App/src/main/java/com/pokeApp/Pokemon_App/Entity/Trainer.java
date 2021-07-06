@@ -17,8 +17,8 @@ public class Trainer {
 
     private String password;
 
-    @OneToMany
-    @JoinColumn(name = "email")
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "trainerEmail")
     private List<Squad> listOfSquad;
 
     public Trainer(String name){
